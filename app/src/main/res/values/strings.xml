@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Opti Stock</string>
+    <string name="username">username</string>
+    <string name="email">Email</string>
+    <string name="already_have_an_account_sign_in">Already have an account? Sign in</string>
+    <string name="create_a_password">Create a Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="don_t_remenber_your_password_forget_it">Don\'t remenber your password? forget it.</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="don_t_have_any_account_sign_up">Don\'t have any account ? Sign up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="enter_your_email_or_username">Enter your Email or Username</string>
+    <string name="todo">TODO</string>
+    <string name="opti_stock">Opti Stock</string>
+</resources>

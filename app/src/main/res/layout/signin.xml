@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".SigninActivity">
+
+    <LinearLayout
+        android:layout_width="347dp"
+        android:layout_height="384dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/future"
+            android:gravity=""
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:autofillHints=""
+                android:background="@drawable/editor_background_design"
+                android:fontFamily="@font/future"
+                android:hint="@string/enter_your_email_or_username"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:fontFamily="@font/future"
+            android:gravity=""
+            android:text="@string/password"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:autofillHints=""
+                android:background="@drawable/editor_background_design"
+                android:fontFamily="@font/future"
+                android:hint="@string/enter_your_password"
+                android:inputType="textPassword"
+                android:padding="12sp"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                tools:ignore="TextSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/future"
+            android:gravity="center"
+            android:text="@string/don_t_remenber_your_password_forget_it" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/future"
+            android:text="@string/sign_in"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/Textview_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/future"
+            android:gravity="center"
+            android:text="@string/don_t_have_any_account_sign_up"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

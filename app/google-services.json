@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "341836734382",
+    "project_id": "opti-stock",
+    "storage_bucket": "opti-stock.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341836734382:android:128d34428c0c4e0ae0b23f",
+        "android_client_info": {
+          "package_name": "com.example.optistock"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp-rtbujGShFAVoKIc7NCj46NVshIIsEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
