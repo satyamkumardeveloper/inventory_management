@@ -8,32 +8,6 @@
     android:background="@drawable/background"
     tools:context=".SigninActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="227dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/future"
-        android:text="@string/opti_stocks"
-        android:textColor="@color/black"
-        android:textSize="45sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="225dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="4dp"
-        android:fontFamily="@font/future"
-        android:text="@string/the_optimal_solution_for_inventory"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
     <LinearLayout
         android:layout_width="347dp"
         android:layout_height="384dp"
