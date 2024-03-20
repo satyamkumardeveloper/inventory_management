@@ -17,9 +17,10 @@
     <string name="enter_your_email_or_username">Enter your Email or Username</string>
     <string name="todo">TODO</string>
     <string name="opti_stock">Opti Stock</string>
-    <string name="Sign_up_before_using_Opti_Stocks" >Sign up before using Opti Stocks</string>
+    <string name="Sign_up_before_using_Opti_Stocks">Sign up before using Opti Stocks</string>
     <string name="opti_stocks">Opti Stocks</string>
     <string name="the_optimal_solutionfor_inventory">The optimal solution for Inventory</string>
     <string name="TODO">TODO</string>
+    <string name="warehouse">Warehouse</string>
 
 </resources>

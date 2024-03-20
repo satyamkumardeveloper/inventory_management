@@ -31,6 +31,7 @@ class SigninActivity : AppCompatActivity() {
                 firebaseAuth.signInWithEmailAndPassword(email,pass).addOnCompleteListener{
                     if (it.isSuccessful){
                         startActivity(Intent(this,home::class.java))
+                        finish()
 
                     }else{
                         Toast.makeText(this,it.exception.toString(),Toast.LENGTH_SHORT).show()

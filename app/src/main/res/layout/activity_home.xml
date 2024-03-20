@@ -4,6 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".home">
+
+    <View
+        android:id="@+id/background_material"
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="413dp"
+        android:layout_height="86dp"
+        android:background="@drawable/wave1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_material" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
