@@ -10,11 +10,16 @@
     <string name="password">Password</string>
     <string name="enter_your_email">Enter your Email</string>
     <string name="enter_your_name">Enter your Name</string>
-    <string name="don_t_remenber_your_password_forget_it">Don\'t remenber your password? forget it.</string>
+    <string name="don_t_remember_your_password_forget_it">Don\'t remember your password? forget it.</string>
     <string name="enter_your_password">Enter your Password</string>
     <string name="don_t_have_any_account_sign_up">Don\'t have any account ? Sign up</string>
     <string name="sign_in">Sign in</string>
     <string name="enter_your_email_or_username">Enter your Email or Username</string>
     <string name="todo">TODO</string>
     <string name="opti_stock">Opti Stock</string>
+    <string name="Sign_up_before_using_Opti_Stocks" >Sign up before using Opti Stocks</string>
+    <string name="opti_stocks">Opti Stocks</string>
+    <string name="the_optimal_solutionfor_inventory">The optimal solution for Inventory</string>
+    <string name="TODO">TODO</string>
+
 </resources>
