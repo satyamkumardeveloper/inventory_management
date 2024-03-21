@@ -30,7 +30,7 @@ class signup : AppCompatActivity() {
                 if (pass1==pass2){
                     firebaseAuth.createUserWithEmailAndPassword(email,pass1).addOnCompleteListener{
                         if (it.isSuccessful){
-                            startActivity(Intent(this,home::class.java))
+                            startActivity(Intent(this,warehouse::class.java))
                             finish()
 
                         }else{

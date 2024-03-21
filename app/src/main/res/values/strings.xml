@@ -22,5 +22,12 @@
     <string name="the_optimal_solutionfor_inventory">The optimal solution for Inventory</string>
     <string name="TODO">TODO</string>
     <string name="warehouse">Warehouse</string>
+    <string name="location">location</string>
+    <string name="add_warehouse">Add Warehouse</string>
+    <string name="add">ADD</string>
+    <string name="Location">Location</string>
+    <string name="warehouse_name">Warehouse Name</string>
+    <string name="enter_warehouse_name">Enter warehouse name</string>
+    <string name="enter_location">Enter location</string>
 
 </resources>
