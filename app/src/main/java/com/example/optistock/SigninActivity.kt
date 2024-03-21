@@ -44,11 +44,11 @@ class SigninActivity : AppCompatActivity() {
         }
     }
 
-//    override fun onStart() {
-//        super.onStart()
-//        if (firebaseAuth.currentUser!=null){
-//            startActivity(Intent(this,home::class.java))
-//
-//        }
-//    }
+    override fun onStart() {
+        super.onStart()
+        if (firebaseAuth.currentUser!=null){
+            startActivity(Intent(this,home::class.java))
+
+        }
+    }
 }

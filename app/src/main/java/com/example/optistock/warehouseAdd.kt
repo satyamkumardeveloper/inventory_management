@@ -42,28 +42,34 @@ class warehouseAdd : AppCompatActivity() {
             if (currentUser!=null){
                 val userId = currentUser.uid
                 val warehouseId = databaseReference.child("users").child(userId).child("warehouses").push().key
-                if (warehouseId != null) {
-                    // Create a map with warehouse data
-                    val warehouseData = mapOf(
-                        "warehouseName" to WarehouseName,
-                        "location" to locate
-                    )
-                    // Insert data into database
-                    databaseReference.child("users").child(userId).child("warehouses").child(warehouseId).setValue(warehouseData)
-                        .addOnSuccessListener {
-                            startActivity(Intent(this,warehouse::class.java))
-                            Toast.makeText(this,"Warehouse added successfully",Toast.LENGTH_SHORT).show()
-                            finish()
-                        }
-                        .addOnFailureListener { exception ->
-                            Toast.makeText(this,exception.toString(),Toast.LENGTH_SHORT).show()
-                        }
+                if (WarehouseName.isNotEmpty() && locate.isNotEmpty()){
+                    if (warehouseId != null) {
+                        // Create a map with warehouse data
+                        val warehouseData = mapOf(
+                            "warehouseName" to WarehouseName,
+                            "location" to locate
+                        )
+                        // Insert data into database
+                        databaseReference.child("users").child(userId).child("warehouses").child(warehouseId).setValue(warehouseData)
+                            .addOnSuccessListener {
+                                startActivity(Intent(this,warehouse::class.java))
+                                Toast.makeText(this,"Warehouse added successfully",Toast.LENGTH_SHORT).show()
+                                finish()
+                            }
+                            .addOnFailureListener { exception ->
+                                Toast.makeText(this,exception.toString(),Toast.LENGTH_SHORT).show()
+                            }
+                    }
+
+                }else{
+                    Toast.makeText(this,"Empty feilds are not allowed",Toast.LENGTH_SHORT).show()
                 }
-            } else {
+
+            }   else {
                 Toast.makeText(this,"Login first",Toast.LENGTH_SHORT).show()
             }
-            }
         }
-
-
     }
+
+
+}
