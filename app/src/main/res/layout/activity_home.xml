@@ -10,7 +10,7 @@
     <View
         android:id="@+id/background_material"
         android:layout_width="match_parent"
-        android:layout_height="120sp"
+        android:layout_height="90sp"
         android:background="@color/yellow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,24 +19,97 @@
     <View
         android:id="@+id/view3"
         android:layout_width="413dp"
-        android:layout_height="86dp"
-        android:background="@drawable/wave1"
+        android:layout_height="190dp"
+        android:background="@drawable/wave_4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/background_material" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/warehouse_BTN"
-        android:layout_width="337dp"
-        android:layout_height="44dp"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="56dp"
+        android:layout_height="64dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/button_background"
-        android:fontFamily="@font/future"
-        android:text="@string/warehouse"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/warehouse"
+        app:layout_constraintEnd_toStartOf="@+id/warehouse_BTN"
+        app:layout_constraintHorizontal_bias="0.761"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view3" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/warehouse_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/future"
+        android:text="@string/warehouse_name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintEnd_toEndOf="@+id/background_material"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/warehouse_BTN"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="24dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="9dp"
+        android:src="@drawable/location"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/warehouse_BTN" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/future"
+        android:text="@string/location"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/warehouse_BTN" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="376dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="112dp"
+        app:cardCornerRadius="8sp"
+        app:cardElevation="8sp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_view_bg_design"
+            android:padding="2sp"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@android:color/transparent"
+            app:queryHint="Search here ..."
+            app:searchIcon="@drawable/search_icon" />
+
+
+    </com.google.android.material.card.MaterialCardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

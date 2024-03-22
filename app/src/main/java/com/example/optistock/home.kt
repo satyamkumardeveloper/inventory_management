@@ -15,5 +15,6 @@ class home : AppCompatActivity() {
         binding.warehouseBTN.setOnClickListener{
             startActivity(Intent(this,warehouse::class.java))
         }
+
     }
 }

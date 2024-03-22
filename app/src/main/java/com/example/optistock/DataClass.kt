@@ -1,11 +1,5 @@
 package com.example.optistock
 
-class DataClass {
-    var warehouseName: String?= null
-    var locate: String?=null
+data class DataClass (var warehouseName:String,var locate:String){
 
-    constructor( warehouseAdd:String?,locate:String?){
-        this.warehouseName=warehouseName
-        this.locate=locate
-    }
 }
