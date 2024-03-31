@@ -29,5 +29,10 @@
     <string name="warehouse_name">Warehouse Name</string>
     <string name="enter_warehouse_name">Enter warehouse name</string>
     <string name="enter_location">Enter location</string>
+    <string name="view_stocks">View Stocks</string>
+    <string name="suppliers">Suppliers</string>
+    <string name="add_product">Add Product</string>
+    <string name="remove_pro">Remove Pro.</string>
+    <string name="analysis">Analysis</string>
 
 </resources>
