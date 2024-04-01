@@ -48,6 +48,7 @@ class SigninActivity : AppCompatActivity() {
         super.onStart()
         if (firebaseAuth.currentUser!=null){
             startActivity(Intent(this,home::class.java))
+            finish()
 
         }
     }

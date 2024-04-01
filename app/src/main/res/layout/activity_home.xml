@@ -16,68 +16,82 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="56dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/warehouse"
-        app:layout_constraintEnd_toStartOf="@+id/warehouse_BTN"
-        app:layout_constraintHorizontal_bias="0.761"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/TODO" />
-
-    <TextView
-        android:id="@+id/warehouse_BTN"
-        android:layout_width="wrap_content"
-        android:layout_height="26dp"
-        android:layout_marginTop="28dp"
-        android:fontFamily="@font/future"
-        android:text="@string/warehouse_name"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.379"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:layout_width="35dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="28dp"
-        android:src="@drawable/arrow"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/warehouse_BTN"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/TODO"/>
+        app:layout_constraintTop_toTopOf="parent">
 
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="24dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="9dp"
-        android:src="@drawable/location"
-        app:layout_constraintBottom_toTopOf="@+id/view3"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/warehouse_BTN"
-        android:contentDescription="@string/TODO"/>
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="24dp"
+            android:layout_height="27dp"
+
+            android:layout_marginStart="12dp"
+            android:contentDescription="@string/TODO"
+            android:src="@drawable/location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/warehouse_BTN" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="56dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/TODO"
+            android:src="@drawable/warehouse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/future"
-        android:text="@string/location"
-        android:textColor="@color/dark_gray"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/warehouse_BTN" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/future"
+            android:text="@string/location"
+            android:textColor="@color/dark_gray"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/warehouse_BTN" />
+
+        <TextView
+            android:id="@+id/warehouse_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/future"
+            android:text="@string/warehouse_name"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.005"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/warehouse_switch"
+            android:layout_width="35dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/TODO"
+            android:src="@drawable/arrow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/warehouse_BTN"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
@@ -290,6 +304,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
+            android:id="@+id/home_BTN"
             android:layout_width="53dp"
             android:layout_height="50dp"
             android:layout_margin="12dp"
@@ -297,6 +312,7 @@
             android:contentDescription="@string/TODO"/>
 
         <ImageView
+            android:id="@+id/user_BTN"
             android:layout_width="53dp"
             android:layout_height="50dp"
             android:src="@drawable/user"

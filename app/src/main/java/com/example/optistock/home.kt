@@ -12,9 +12,18 @@ class home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.warehouseBTN.setOnClickListener{
+        binding.warehouseSwitch.setOnClickListener{
             startActivity(Intent(this,warehouse::class.java))
         }
+        binding.homeBTN.setOnClickListener{
+            startActivity(Intent(this,home::class.java))
+            finish()
+        }
+        binding.userBTN.setOnClickListener{
+            startActivity(Intent(this,user::class.java))
+            finish()
+        }
+
 
     }
 }

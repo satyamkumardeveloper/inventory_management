@@ -34,5 +34,7 @@
     <string name="add_product">Add Product</string>
     <string name="remove_pro">Remove Pro.</string>
     <string name="analysis">Analysis</string>
+    <string name="user_name">user_name</string>
+    <string name="log_out">Log out</string>
 
 </resources>

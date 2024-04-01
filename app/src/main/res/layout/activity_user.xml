@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/home_background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/home_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="61dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/home_item_background"
+            android:contentDescription="@string/TODO"
+            android:src="@drawable/profile_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        <TextView
+            android:id="@+id/warehouse_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/future"
+            android:text="@string/user_name"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.005"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/warehouse_switch"
+            android:layout_width="35dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/TODO"
+            android:src="@drawable/arrow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/warehouse_BTN"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/home_icon_bar"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home_BTN"
+            android:layout_width="53dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:contentDescription="@string/TODO"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/user_BTN"
+            android:layout_width="53dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+
+            android:contentDescription="@string/TODO"
+            android:src="@drawable/user" />
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+
+            android:contentDescription="@string/TODO"
+            android:src="@drawable/supplier" />
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+
+            android:contentDescription="@string/TODO"
+            android:src="@drawable/setting" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logout_BTN"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="253dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/button_background"
+        android:contentDescription="@string/TODO"
+        android:fontFamily="@font/future"
+        android:text="@string/log_out"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
