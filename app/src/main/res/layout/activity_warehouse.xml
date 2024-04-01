@@ -20,10 +20,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-        <com.google.android.material.card.MaterialCardView
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
-        android:layout_width="376dp"
-        android:layout_height="78dp"
+        android:layout_width="348dp"
+        android:layout_height="86dp"
         android:layout_marginTop="124dp"
         app:cardCornerRadius="8sp"
         app:cardElevation="8sp"
